@@ -50,6 +50,6 @@ float& tableau::operator[](int index)
 tableau::~tableau()
 {
 	std::cout << "Destructeur de la classe _tableau_" << std::endl;
-	delete[] this->var;
+	delete this->var;
 	this->var = 0;
 }
