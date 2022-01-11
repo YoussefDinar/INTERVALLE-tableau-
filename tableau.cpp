@@ -41,10 +41,10 @@ tableau& tableau::operator=(const tableau& T)
 	return *this;
 }
 
-float& tableau::operator[](int index)
+float& tableau::operator[](int indice)
 {
-	assert((index >= 0 && index < this->taille));
-	return this->var[index];
+	assert((indice >= 0 && indice < this->taille));
+	return this->var[indice];
 }
 
 tableau::~tableau()
