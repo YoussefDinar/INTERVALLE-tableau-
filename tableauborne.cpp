@@ -20,14 +20,14 @@ this->r = (y<taille && y > x) ? y :5;
 float& tableauborne::operator[](int indice)
 {
 if (indice >= this->l && indice <= this->r) {
-	return this->tab[indice];
+	return this->val[indice];
 	}
 }
 
 void tableauborne::operator()(int indice, float val)
 {
 if (indice < taille && indice >= this->l && indice <= this->r) {
-		this->tab[indice] = val;
+		this->val[indice] = val;
 	}
 	else {
 		std::cout <<"indice incorrect ! "<< std::endl;
