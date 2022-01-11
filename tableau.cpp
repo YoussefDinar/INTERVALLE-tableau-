@@ -49,7 +49,7 @@ float& tableau::operator[](int index)
 
 tableau::~tableau()
 {
-	std::cout << "Destructeur de la classe _tableau_" << std::endl;
+	std::cout << "destructeur de la classe tableau" << std::endl;
 	delete this->var;
 	this->var = 0;
 }
