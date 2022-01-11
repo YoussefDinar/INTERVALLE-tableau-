@@ -10,7 +10,7 @@ public:
 	void saisie();
 	tableau& operator=(const tableau& T);
 	
-	float& operator[](int index);
+	float& operator[](int indice);
 	~tableau();
 
 
